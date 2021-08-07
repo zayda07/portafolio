@@ -1,0 +1,971 @@
+/*
+       
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/*************HEADER PART****************/
+.header-area {
+    width: 100%;
+    height: 58px;
+}
+.header-area .menu {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: 58px;
+    background-color: #ffffff;
+}
+.header-area .menu .logoSection {
+    display: flex;
+    height: 58px;
+    position: relative;
+}
+.header-area .menu .logoSection .logo img {
+    height: 58px;
+    padding-left: 48px;
+}
+
+.header-area .menu .section-items {
+    display: flex;
+    width: 90%;
+    margin-left: 20%;
+}
+.header-area .menu .section-items ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0%;
+    padding: 0px 150px 0px 150px;
+    list-style: none;
+    width: 100%;
+    height: 58px;
+    position: relative;
+}
+.header-area .menu .section-items ul li {
+    line-height: 40px;
+    list-style: none outside none;
+    padding: 5px 30px 5px 5px;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header-area .menu .section-items ul li a {
+    text-decoration: none;
+    color: #355881;
+}
+
+.header-area .menu .section-items .checkbtn {
+    display: none;
+}
+.header-area .menu .checkbtn i {
+    height: 48px;
+}
+#check {
+    display: none;
+}
+
+/*************HOME PART****************/
+.home {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    background-color: #355881;
+}
+
+.home .description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+}
+
+.home .description .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 60px;
+    height: 250px;
+    color: #ffffff;
+    align-self: center;
+}
+
+.home .description .text p {
+    text-align: center;
+}
+
+.home .description .icons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 125px;
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+}
+.home .description .icons i {
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.home .photo {
+    width: 50%;
+    height: 500px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.home .photo img {
+    position: inherit;
+    margin-top: 70px;
+    width: 360px;
+    height: 360px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+/*************ABOUT ME PART****************/
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #5c94cb;
+}
+
+.aboutMe .title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 60px;
+    margin-top: 40px;
+}
+.aboutMe .content {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    color: #ffffff;
+}
+.aboutMe .content .description {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    height: auto;
+    font-size: 27px;
+    text-align: center;
+    align-self: center;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+.aboutMe .content .languages {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+    width: 50%;
+}
+.aboutMe .content .languages .text {
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    font-size: 27px;
+    margin-top: 30px;
+}
+.aboutMe .content .languages .icons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(10px, auto);
+    position: inherit;
+    width: 100%;
+    height: 337px;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    justify-content: center;
+}
+
+.aboutMe .content .languages .icons .skills {
+    padding: 0px 0px 0px 38px;
+    display: grid;
+    grid-column: 2/6;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 12px -10px 30px -10px;
+}
+.aboutMe .content .languages .icons .bar {
+    grid-column: 3/7;
+    position: inherit;
+    width: 100%;
+    height: auto;
+    margin-left: -25px;
+    align-self: center;
+}
+.aboutMe .content .languages .icons p {
+    grid-column: 2;
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-left: -100px;
+}
+.aboutMe .content .languages .icons p i {
+    grid-column: 2;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+}
+
+/***Pregress bar***/
+.progress {
+    display: grid;
+    margin-top: 20px;
+    grid: max-content;
+    position: inherit;
+    height: auto;
+    background: #fff;
+    border-top: 1px solid #1c2647;
+    border-bottom: 1px solid #1c2647;
+    border-radius: 100px;
+    margin-bottom: 25px;
+    overflow: visible;
+    height: auto;
+}
+.progress:before,
+.progress:after {
+    content: "";
+    width: 2px;
+    background: #1c2647;
+    position: inherit;
+    top: 0;
+    left: -5px;
+    bottom: 0;
+}
+.progress:after {
+    left: auto;
+    right: -5px;
+}
+.progress .progress-bar {
+    height: 20px;
+    border: none;
+    box-shadow: none;
+    background-color: #8d6894;
+    -webkit-animation: 2s linear 0s normal none infinite running
+            progress-bar-stripes,
+        animate-positive 1s;
+    animation: 2s linear 0s normal none infinite running progress-bar-stripes,
+        animate-positive 1s color #fff;
+}
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+/*************PROJECTS PART****************/
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.projects .title {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+.projects .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-rows: minmax(100px, auto);*/
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+.projects .cards .card {
+    margin-top: 30px;
+    height: auto;
+    /*flex: 1;*/
+    margin: 10px 30px;
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px rbga(0, 0, 0, 0, 5);
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 10px;
+    position: inherit;
+    transition: 0.5s;
+}
+
+.projects .cards .card .img {
+    display: block;
+    height: 70%;
+    width: 100%;
+}
+
+.projects .cards .card .img img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.projects .cards .card .content {
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    height: auto;
+}
+
+.projects .cards .card .content .title {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.projects .cards .card .content p {
+    display: block;
+    text-align: left;
+    height: auto;
+}
+
+.projects .cards .card .content .btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 2px;
+    height: auto;
+}
+
+.projects .cards .card .content .btn a {
+    display: block;
+    background-color: #ffffff;
+    border: 2px solid #355881;
+    border-radius: 50px;
+    color: #000000;
+    outline: none;
+    font-size: 18px;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.projects .cards .card .content .btn button:hover {
+    display: block;
+    transform: scale(0.9);
+}
+
+/*************CONTACT PART****************/
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #5c94cb;
+}
+.contact .title {
+    grid-column: 2/6;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+.contact .contact-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-rows: minmax(100px, auto);*/
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.contact .contact-area .personal-contact {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(10px, auto);
+    margin-top: 101px;
+    height: 103px;
+    width: 100%;
+    text-align: center;
+}
+.contact .contact-area .personal-contact .option {
+    grid-column: 1/7;
+    text-align: center;
+}
+
+.contact .contact-area .personal-contact .option p {
+    font-size: 17px;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    color: #fff;
+}
+.contact .contact-area .personal-contact .option p i {
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #fff;
+}
+.contact .contact-area .message {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(10px, auto);
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.contact .contact-area .message form {
+    grid-column: 1/6;
+    width: 80%;
+    height: auto;
+    margin-bottom: 38px;
+    text-align: center;
+    align-self: center;
+}
+.contact .contact-area .message form input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+.contact .contact-area .message .send {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    background-color: #355881;
+}
+.contact .contact-area .message .reset {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    background-color: #a8b2bd;
+}
+.contact .contact-area .message form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+/*************FOOTER PART****************/
+.footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #355881;
+    color: white;
+    bottom: 0;
+}
+
+.footer .p {
+    width: 100%;
+    align-self: center;
+}
+
+.footer .p p {
+    font-size: 18px;
+    text-align: center;
+}
+/*************RESPONSIVE HEADER PART****************/
+@media screen and (max-width: 872px) {
+    .header-area .menu {
+        float: right;
+    }
+    .header-area .menu .logoSection {
+        display: none;
+    }
+    .header-area .menu .section-items {
+        display: block;
+        position: fixed;
+        width: 100%;
+        margin-left: 90%;
+    }
+    .header-area .menu .section-items .checkbtn {
+        display: flex;
+        margin-top: 10px;
+        line-height: 80px;
+        color: black;
+        font-size: 30px;
+    }
+
+    .header-area .menu .section-items ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 38px;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        opacity: 0.8;
+        left: -130%;
+        text-align: center;
+        transition: 0.6s all;
+    }
+    .header-area .menu .section-items ul li {
+        display: flex;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    .header-area .menu .section-items ul li a {
+        color: #355881;
+    }
+    .header-area .menu .section-items ul li a:hover {
+        color: #355881;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 500px;
+        background-color: #355881;
+    }
+
+    .home .photo {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+    }
+
+    .home .photo img {
+        position: inherit;
+        margin-top: 21px;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+    }
+
+    .home .description {
+        display: flex;
+        width: 100%;
+        height: 250px;
+    }
+
+    .home .description .text {
+        justify-content: flex-start;
+        position: relative;
+        height: auto;
+        font-size: 40px;
+        text-align: center;
+    }
+    .home .description .icons {
+        width: 100%;
+        height: 125px;
+        font-size: 40px;
+    }
+    .home .description .icons i {
+        margin-right: 30px;
+    }
+
+    .aboutMe .title {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    .aboutMe .content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        color: #ffffff;
+    }
+    .aboutMe .content .description {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+        text-align: center;
+        align-self: center;
+        margin-top: 30px;
+        padding-left: 0px;
+    }
+    .aboutMe .content .languages {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-align: center;
+        height: auto;
+        width: 100%;
+    }
+    .aboutMe .content .languages .text {
+        text-align: center;
+        justify-content: center;
+        height: auto;
+        font-size: 27px;
+        margin-top: 30px;
+    }
+    .aboutMe .content .languages .icons {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: minmax(10px, auto);
+        position: inherit;
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+        color: #000000;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .aboutMe .content .languages .icons .skills {
+        padding: 0px 0px 0px 38px;
+        display: grid;
+        grid-column: 2/6;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        margin: 12px -10px 30px -10px;
+    }
+    .aboutMe .content .languages .icons .bar {
+        grid-column: 3/7;
+        position: inherit;
+        width: 100%;
+        height: auto;
+        margin-left: -25px;
+        align-self: center;
+    }
+    .aboutMe .content .languages .icons p {
+        grid-column: 2;
+        font-size: 13px;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        margin-left: -100px;
+        width: auto;
+        height: auto;
+    }
+    .aboutMe .content .languages .icons p i {
+        grid-column: 2;
+        width: auto;
+        height: auto;
+        font-size: 24px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /***Pregress bar***/
+    .progress {
+        display: grid;
+        margin-top: 20px;
+        grid: max-content;
+        position: inherit;
+        height: auto;
+        background: #fff;
+        border-top: 1px solid #1c2647;
+        border-bottom: 1px solid #1c2647;
+        border-radius: 100px;
+        margin-bottom: 25px;
+        overflow: visible;
+        height: auto;
+    }
+    .progress:before,
+    .progress:after {
+        content: "";
+        width: 2px;
+        background: #1c2647;
+        position: inherit;
+        top: 0;
+        left: -5px;
+        bottom: 0;
+    }
+    .progress:after {
+        left: auto;
+        right: -5px;
+    }
+    .progress .progress-bar {
+        height: 20px;
+        border: none;
+        box-shadow: none;
+        background-color: #8d6894;
+        -webkit-animation: 2s linear 0s normal none infinite running
+                progress-bar-stripes,
+            animate-positive 1s;
+        animation: 2s linear 0s normal none infinite running
+                progress-bar-stripes,
+            animate-positive 1s color #fff;
+    }
+    @-webkit-keyframes animate-positive {
+        0% {
+            width: 0;
+        }
+    }
+    @keyframes animate-positive {
+        0% {
+            width: 0;
+        }
+    }
+
+    /********PROYECT PART********/
+    .projects .title {
+        grid-column: 2/6;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        justify-content: center;
+        color: #000000;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    .projects .cards .card {
+        grid-column: 1/7;
+        margin-top: 30px;
+        height: auto;
+        /*flex: 1;*/
+        margin: 10px 30px;
+        padding: 5px;
+        background-color: #ffffff;
+        box-shadow: 2px 2px 4px rbga(0, 0, 0, 0, 5);
+        border: 1px solid rgb(10, 10, 10);
+        border-radius: 10px;
+        position: inherit;
+        transition: 0.5s;
+    }
+
+    .projects .cards .card .img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .projects .cards .card .img img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .projects .cards .card .content {
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .projects .cards .card .content .title {
+        display: block;
+
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .projects .cards .card .content p {
+        display: block;
+        text-align: left;
+    }
+
+    .projects .cards .card .content .btn {
+        display: block;
+        text-align: center;
+    }
+
+    .projects .cards .card .content .btn a {
+        display: block;
+        background-color: #ffffff;
+        border: 2px solid #355881;
+        border-radius: 50px;
+        color: #000000;
+        outline: none;
+        font-size: 18px;
+        padding: 5px 8px;
+        cursor: pointer;
+        transition: 0.2s;
+        text-decoration: none;
+    }
+
+    .projects .cards .card .content .btn button:hover {
+        display: block;
+        transform: scale(0.9);
+    }
+
+    /********CONTACT PART********/
+    .contact .title {
+        grid-column: 2/6;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        justify-content: center;
+        color: #000000;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    .contact .contact-area {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: auto;
+    }
+    .contact .contact-area .personal-contact {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: minmax(10px, auto);
+        margin-top: 30px;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .contact .contact-area .personal-contact .option {
+        grid-column: 1/7;
+        text-align: center;
+    }
+
+    .contact .contact-area .personal-contact .option p {
+        font-size: 17px;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+    .contact .contact-area .personal-contact .option p i {
+        width: auto;
+        height: auto;
+        font-size: 24px;
+        text-align: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    .contact .contact-area .message {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: minmax(10px, auto);
+        margin-top: 30px;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact .contact-area .message form {
+        grid-column: 2/6;
+        width: 100%;
+        height: auto;
+    }
+    .contact .contact-area .message form input {
+        grid-column: 2/6;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding-left: 5px;
+    }
+    .contact .contact-area .message form textarea {
+        grid-column: 2/6;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+    }
+    .contact .contact-area .message form button {
+        grid-column: 2/6;
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    .contact .contact-area .message .send {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding-left: 5px;
+        margin-bottom: 5px;
+        height: 30px;
+        background-color: #355881;
+    }
+    .contact .contact-area .message .reset {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding-left: 5px;
+        margin-bottom: 5px;
+        height: 30px;
+        background-color: #a8b2bd;
+    }
+}
+
+@media screen and (max-width: 994px) {
+    .header-area .menu .section-items ul li {
+        padding: 4px;
+        font-size: 14px;
+    }
+    .header-area .menu .section-items ul li a {
+        padding: 4px;
+    }
+}

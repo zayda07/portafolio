@@ -628,22 +628,35 @@ body {
 /*************FOOTER PART****************/
 .footer {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
     color: white;
     bottom: 0;
+    text-align: center;
 }
 
+.footer .icons {
+    display: flex;
+    align-self: center;
+}
+.favicon {
+    padding: 10px;
+    font-size: 28px;
+    color: #ffffff;
+}
+.favicon:hover {
+    color: #355881;
+}
 .footer .p {
     width: 100%;
-    align-self: center;
 }
 
 .footer .p p {
     font-size: 18px;
-    text-align: center;
 }
+
 /*************RESPONSIVE HEADER PART****************/
 @media screen and (max-width: 872px) {
     .header-area .menu {
@@ -982,4 +995,3 @@ body {
         padding: 4px;
     }
 }
-

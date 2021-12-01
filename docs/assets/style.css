@@ -641,12 +641,12 @@ body {
     display: flex;
     align-self: center;
 }
-.favicon {
+.footer .icons .favicon {
     padding: 10px;
     font-size: 28px;
     color: #ffffff;
 }
-.favicon:hover {
+.footer .icons .favicon:hover {
     color: #355881;
 }
 .footer .p {
